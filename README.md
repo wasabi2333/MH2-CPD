@@ -1,14 +1,10 @@
-# Construction Project Delay Risk Prediction - Hypergraph GNN
+# Multi-view Heterogeneous Hypergraph Neural Network for Construction Project Delay Prediction (MH2-CPD)
 
-This is a binary classification system using Hypergraph Neural Network (Hypergraph GNN) to predict construction project delay risk. The model uses 37 risk factors (grouped into 7 categories) to predict a single project outcome indicator (delay) as either low risk or high risk.
+MH2-CPD is an advanced neural network framework for delay prediction in construction projects. Unlike traditional graph-based models, MH2-CPD leverages a multiview heterogeneous hypergraph structure to capture complex, high-order, and multi-relational dependencies among diverse project features.
 
-## Project Features
-- **Binary classification**: Risk classification based on standardized values 
-- **Hypergraph structure**: Three-layer hyperedge construction strategy
-  - Layer 1: Domain knowledge group hyperedges
-  - Layer 2: Intra-group semantic hyperedges (based on mutual information)
-  - Layer 3: Inter-group hyperedges (based on clustering strategy)
-- **Attention mechanism**: Attention mechanism in hypergraph convolution
+The framework consists of two main components:
+1. **Multi-view Heterogeneous Hypergraph Construction**: Multiple types of hyperedges are constructed based on feature groups, correlations, and latent patterns, enabling the model to represent heterogeneous and high-order relationships among project attributes from different perspectives.
+2. **Hypergraph Neural Network with Attention**: A multi-layer neural architecture performs hypergraph convolution operations [1], enhanced by layer normalisation, residual connections, and an edge attention mechanism, to jointly predict delay risk in a multi-task learning setting.
 
 ## Environment Requirements
 
@@ -23,3 +19,15 @@ Seaborn
 tqdm
 ```
 
+## Citation
+```
+@misc{mh2-cpd2025,
+    title={Multi-view Heterogeneous Hypergraph Neural Network for Construction Project Delay Prediction},
+    author={[Authors]},
+    year={2025},
+    note={Manuscript in preparation}
+}
+```
+## References
+
+[1] Feng, Y., You, H., Zhang, Z., Ji, R., & Gao, Y. (2019). Hypergraph neural networks. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 33, No. 01, pp. 3558-3565).
