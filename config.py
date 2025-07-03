@@ -3,30 +3,30 @@ import torch
 
 class Config:
     
-    data_path = 'data_229_latest.csv'
+    data_path = 'your_data_path'
     test_size = 0.2  
     random_state = 42
     
+    #for example
+    feature_cols = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6',
+                    'B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8',
+                    'C1', 'C2', 'C3',
+                    'D1', 'D2', 'D3',
+                    'E1', 'E2', 'E3',
+                    'F1', 'F2', 'F3', 'F4', 'F5', 'F6',
+                    'G1', 'G2', 'G3', 'G4', 'G5', 'G6', 'G7', 'G8']
     
-    feature_cols = ['CIS1', 'CIS2', 'CIS3', 'CIS4', 'CIS5', 'CIS6',
-                    'RA1', 'RA2', 'RA3', 'RA4', 'RA5', 'RA6', 'RA7', 'RA8',
-                    'ITM1', 'ITM2', 'ITM3',
-                    'CRAA1', 'CRAA2', 'CRAA3',
-                    'CS1', 'CS2', 'CS3',
-                    'PE1', 'PE2', 'PE3', 'PE4', 'PE5', 'PE6',
-                    'EE1', 'EE2', 'EE3', 'EE4', 'EE5', 'EE6', 'EE7', 'EE8']
-    
-    label_col = 'PP1'  
+    label_col = 'Delay'  
     
     
     factor_groups = {
-        'CIS': ['CIS1', 'CIS2', 'CIS3', 'CIS4', 'CIS5', 'CIS6'],
-        'RA': ['RA1', 'RA2', 'RA3', 'RA4', 'RA5', 'RA6', 'RA7', 'RA8'],
-        'ITM': ['ITM1', 'ITM2', 'ITM3'],
-        'CRAA': ['CRAA1', 'CRAA2', 'CRAA3'],
-        'CS': ['CS1', 'CS2', 'CS3'],
-        'PE': ['PE1', 'PE2', 'PE3', 'PE4', 'PE5', 'PE6'],
-        'EE': ['EE1', 'EE2', 'EE3', 'EE4', 'EE5', 'EE6', 'EE7', 'EE8']
+        'A': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6'],
+        'B': ['B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8'],
+        'C': ['C1', 'C2', 'C3'],
+        'D': ['D1', 'D2', 'D3'],
+        'E': ['E1', 'E2', 'E3'],
+        'F': ['F1', 'F2', 'F3', 'F4', 'F5', 'F6'],
+        'G': ['G1', 'G2', 'G3', 'G4', 'G5', 'G6', 'G7', 'G8']
     }
     
     
